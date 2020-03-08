@@ -344,7 +344,7 @@ public class IndexableLayout extends FrameLayout {
         mIndexBar = new IndexBar(context);
         mIndexBar.init(mBarBg, mBarTextColor, mBarFocusTextColor, mBarTextSize, mBarTextSpace);
         LayoutParams params = new LayoutParams((int) mBarWidth, LayoutParams.WRAP_CONTENT);
-        params.gravity = Gravity.END | Gravity.CENTER_VERTICAL;
+        params.gravity = Gravity.END | Gravity.TOP;
         addView(mIndexBar, params);
 
         mRealAdapter = new RealAdapter();
